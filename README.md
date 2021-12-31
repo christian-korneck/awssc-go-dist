@@ -1,0 +1,1 @@
+# awssc-go-dist
