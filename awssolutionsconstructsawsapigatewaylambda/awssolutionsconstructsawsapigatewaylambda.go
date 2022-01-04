@@ -139,7 +139,7 @@ func (a *jsiiProxy_ApiGatewayToLambda) ToString() *string {
 // The properties for the ApiGatewayToLambda class.
 type ApiGatewayToLambdaProps struct {
 	// Optional user-provided props to override the default props for the API.
-	ApiGatewayProps interface{} `json:"apiGatewayProps"`
+	ApiGatewayProps *awsapigateway.LambdaRestApiProps `json:"apiGatewayProps"`
 	// Existing instance of Lambda Function object, providing both this and `lambdaFunctionProps` will cause an error.
 	ExistingLambdaObj awslambda.Function `json:"existingLambdaObj"`
 	// User provided props to override the default props for the Lambda function.
